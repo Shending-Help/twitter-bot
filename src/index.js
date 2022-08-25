@@ -6,3 +6,5 @@ const tweet = async () => {
   const tweet = `${joke.title}\n${joke.body}`;
   await client.post("statuses/update", { status: tweet });
 };
+
+setInterval(tweet, 1000 * 60 * 60); // every hour

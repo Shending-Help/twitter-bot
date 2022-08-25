@@ -11,7 +11,7 @@ const jokes = JSON.parse(rawData);
 
 const getJoke = () => {
   const randomIndex = Math.floor(Math.random() * jokes.length);
-  console.log(jokes[randomIndex].title + jokes[randomIndex].body);
+  console.log(jokes[randomIndex].title + "\n" + jokes[randomIndex].body);
   return jokes[randomIndex];
 };
 
